@@ -18,7 +18,6 @@ header.header {
     width: 70%;
     margin: 0 auto;
     vertical-align: middle;
-  /*  border: 1px dotted red; не забыть убрать  */
     overflow: hidden;
 }
 .layout-positioner:after,
@@ -28,6 +27,15 @@ header.header {
     clear: both;
 }
 /* main header logo  */
+main {
+    overlay: hidden;
+}
+main:before,
+main:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
 .main-header-logo {
     width: 24%;
     height: auto;
@@ -316,7 +324,7 @@ nav.menu {
 }
 .content_header .content_title {
     float: left;
-    width: 55%;
+    width: 65%;
     margin-right: 5%;
 }
 .content_title .title {
@@ -335,7 +343,7 @@ nav.menu {
 }
 .content_header .content_logo {
     float: right;
-    width: 40%;
+    width: 30%;
     text-align: right;
 }
 .content_logo-img {
@@ -454,20 +462,26 @@ span:after {
 .contacts {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 415px;
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 30px;
     background-color: #fff;
+    background: url("../img/map.jpg") no-repeat center;
 }
+.contacts:after {
+    display: block;
+    content: " ";
+    clear: both;
+}
+/*
 .contacts_map {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 420px;
-    background: url("../img/map.jpg") no-repeat;
-}
+} */
 .contacts_feedback {
     position: absolute;
     top: 100px;
@@ -515,4 +529,48 @@ span:after {
     background-color: #b63538;
     box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.15);
 }
+.footer {
+   width: 100%;
+   height: 200px;
+   padding: 30px 0;
+   vertical-align: middle;
+   background-color: #fff;
+}
+.footer_social {
+    width: 35%;
+    margin-right: 5%;
+    float: left;
+}
+.footer_invite {
+    width: 60%;
+    float: right;
+}
+.footer_social .btn {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+    color: #fff;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.footer_social .btn:hover {
+    background-color: #f5464b;
+}
+.footer_invite .invite_text > strong {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 14px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 36px;
+}
+.footer_invite .invite_text {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 300;
 }
