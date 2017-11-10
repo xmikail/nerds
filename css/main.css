@@ -15,7 +15,7 @@ header.header {
     background-color: #eee;
 }
 .layout-positioner {
-    width: 70%;
+    width: 1024px;
     margin: 0 auto;
     vertical-align: middle;
     overflow: hidden;
@@ -100,112 +100,119 @@ nav.menu {
 .main-header-shoppng-cart .fa {
     vertical-align: middle;
 }
-/* slider styles  */
+
+/* СЛАЙДЕР */
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .slider {
-    width: 100%;
-    height: 300px;
-    background-color: #eee;
-    padding-bottom: 20px;
-    overflow: hidden;
-}
-.slide-holder {
-    width: 100%;
-    height: 300px;
-    clear: both;
-    overflow: hidden;
     position: relative;
-    transition: left 2s;
+    overflow: hidden;
+    text-align: left;
 }
-.slides {
+
+.slider-container {
+    width: 300%;
+}
+
+.slider-item {
     float: left;
-    width: 100%;
-    height: inherit;
-    margin: 0;
-    padding: 0;
-    position: relative;
+    min-height: 310px;
+    min-width: 100%;
 }
-.slide-caption {
-    width: 50%;
-    margin-right: 5%;
+
+.slider-left-column {
+    float: left;
+    padding-top: 30px;
+}
+
+.slider-column-design {
+    width: 45%;
+}
+
+.slider-column-math,
+.slider-column-drugs {
+    width: 55%;
+}
+
+.slider-title {
+    margin-bottom: 19px;
+}
+
+.slider-info {
+    margin-bottom: 29px;
+    color: #283136;
+}
+
+.slider-column-drugs .slider-title {
+    width: 45%;
+}
+
+.slider-right-column {
+    float: right;
+    width: 40%;
+}
+
+.slider-right-column .slider-figure {
+    float: right;
+}
+
+.slider-math-figure {
+    margin-right: 10px;
+}
+
+.slider-drugs-figure {
     position: absolute;
-    top: 0; left: 0;
+    bottom: 0px;
 }
-.slide-image {
-    width: 35%;
+
+.slider-design-figure {
     position: absolute;
-    top: 0; right: 0;
+    top: 10px;
 }
-/*
-.item-first {
-    background: url("../img/slider-design-img.png") no-repeat 100% 1%;
+
+.slider-math-figure,
+.slider-design-figure,
+.slider-drugs-figure,
+.offer-item-image,
+.detail-header-image,
+.brand-item {
+    line-height: 0;
 }
-.item-second {
-    background: url("../img/slider-drugs-img.png") no-repeat 100% 1%;
-}
-.item-third {
-    background: url("../img/slider-math-img.png") no-repeat 100% 1%;
-}
-*/
-.slide-heading {
-    width: 100%;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-    margin-bottom: 20px;
-    padding-top: 20px;
-}
-.slide-caption-text {
-    max-width: 100%;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
-    margin-bottom: 20px;
-}
-.slide-button {
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    display: block;
-    width: 25%;
-    padding: 10px 15px;
-    font-size: 12px;
-    font-weight: 400;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 3px;
-    background-color: #fb565a;
-    transition: 0.3s;
-}
-.slide-button:hover {
-    background-color: #d6494d;
-    box-shadow: 1px 2px 5px rgba(0,0,0,0.15); 
-}
-.slide-button:active {
-    background-color: #b63538;
-}
-#slider-image-1:target ~ .slide-holder {
-    left: 0;
-}
-#slider-image-2:target ~ .slide-holder {
-    left: -100%;
-}
-#slider-image-3:target ~ .slide-holder {
-    left: -200%;
-}
-.button-holder {
-    position: relative;
-    top: -40px; left: 50%;
-}
-.slide-change {
+
+.btn {
     display: inline-block;
-    height: 10px;
-    width: 10px;
+    vertical-align: baseline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #fb565a;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
-    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #d6494d;
+}
+
+.btn:active {
+    background-color: #b63538;
+    box-shadow: inset 0 3px 0 0 #9b2d30;
+}
+
+.slider-btn {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.catalog-range-filter {
+    text-transform: uppercase;
 }
 /* services section styles  */
 .services {
@@ -216,15 +223,17 @@ nav.menu {
     padding-bottom: 30px;
     background-color: #fff;
 }
+/*
 .services:after {
     content: " ";
     display: inline-block;
-    width: 70%;
+    width: 1024px;
     height: 2px;
-    margin-left: 15%;
+    margin: 0 auto;
     margin-top: 30px;
     background-color: #eee;
 }
+*/
 .services .service {
     float: left;
     width: 30%;
@@ -308,14 +317,19 @@ nav.menu {
     padding-bottom: 10px;
     background-color: #fff;
 }
+/*
 .content:after {
     content: " ";
     display: inline-block;
-    width: 70%;
+    width: 1024px;
     height: 2px;
-    margin-left: 15%;
+    margin: 0 auto;
     margin-top: 30px;
     background-color: #eee;
+}
+*/
+.content_header {
+    width: 100%;
 }
 .content .content_header:after {
     content: " ";
@@ -419,10 +433,10 @@ span:after {
 .clients:after {
     content: " ";
     display: block;
-    width: 70%;
+    width: 1024px;
     height: 2px;
     background-color: #eee;
-    margin-left: 15%;
+    margin: 0 auto;
     margin-top: 30px;
 }
 .clients_column {
@@ -552,7 +566,7 @@ span:after {
     margin-right: 10px;
     text-align: center;
     vertical-align: middle;
-    line-height: 70px;
+    line-height: 52px;
     color: #fff;
     background-color: #ccc;
     border-radius: 50%;
@@ -571,6 +585,6 @@ span:after {
 }
 .footer_invite .invite_text {
     font-size: 14px;
-    line-height: 1;
+    line-height: 14px;
     font-weight: 300;
 }

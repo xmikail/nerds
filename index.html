@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="font/symbols-nerds.ttf">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slider.css">
 </head>
 <body>
     <header class="header">
@@ -29,44 +30,42 @@
     </header>
     <main>
         <section class="slider">
-            <div class="layout-positioner">
-                <span id="slider-image-1"></span>
-                <span id="slider-image-2"></span>
-                <span id="slider-image-3"></span>
-                <div class="slide-holder">
-                    <div class="slides">
-                        <div class="slide-caption">
-                            <h3 class="slide-heading">Долго, дорого,<br> скрупулезно.</h3>
-                            <p class="slide-caption-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                        </div>
-                        <img class="slide-image" src="img/slider-design-img.png" alt="">
-                        <a class="slide-button" href="">Узнать больше</a>
-                    </div>
-                    <div class="slides">
-                        <div class="slide-caption">
-                            <h3 class="slide-heading">
-                                Только наркотики, только хардкор!
-                            </h3>
-                            <p class="slide-caption-text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
-                        </div>
-                        <img class="slider-image" src="img/slider-drugs-img.png" alt="">
-                        <a class="slide-button" href="">Узнать больше</a>
-                    </div>
-                    <div class="slides">
-                        <div class="slide-caption">
-                            <h3 class="slide-heading">Любите ли вы математику, как любим ее мы?</h3>
-                            <p class="slide-caption-text">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
-                        </div>
-                        <img class="slider-image" src="img/slider-math-img.png" alt="">
-                        <a class="slide-button" href="">Узнать больше</a>
-                    </div>
+            <div class="slide-holder container">
+                <div class="slide-controller_wrapper">
+                    <label class="radio slide-controller_design">
+                        <input type="radio" name="slide-controller" ><span class="radio"></span>
+                    </label>
+                    <label class="radio slide-controller_math">
+                        <input type="radio" name="slide-controller"><span class="radio"></span>
+                    </label>
+                    <label class="radio slide-controller_drugs">
+                        <input type="radio" name="slide-controller"><span class="radio"></span>
+                    </label>
                 </div>
-                <div class="button-holder">
-                    <a class="slide-change" href="#slider-image-1"></a>
-                    <a class="slide-change" href="#slider-image-2"></a>
-                    <a class="slide-change" href="#slider-image-3"></a>
-                </div>
-            </div>
+                <div class="slides_wrapper">
+                <div class="slide slide__design">
+                    <div class="slide_info column-left">
+                        <h4 class="slide_info-heading">Долго, дорого,<br> скрупулезно.</h4>
+                        <p class="slide_info-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                        <a class="slide_info-button" href="">узнать больше</a>
+                    </div>
+                </div><!-- slide end  -->
+                <div class="slide slide__math">
+                    <div class="slide_info slide_info--math column-left">
+                        <h4 class="slide_info-heading">Любите ли вы математику,<br> как любим ее мы?</h4>
+                        <p class="slide_info-text">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать.</p>
+                        <a class="slide_info-button" href="">узнать больше</a>
+                    </div>
+                </div><!-- slide end  -->
+                <div class="slide slide__drugs">
+                    <div class="slide_info column-left">
+                        <h4 class="slide_info-heading">Только наркотики, только хардкор!</h4>
+                        <p class="slide_info-text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+                        <a class="slide_info-button" href="">узнать больше</a>
+                    </div>
+                </div><!-- slide end  -->
+                </div> <!-- slides_wrapper  -->
+            </div><!-- slide-holder & container  -->
         </section>
         <section id="services" class="services">
             <div class="layout-positioner">
